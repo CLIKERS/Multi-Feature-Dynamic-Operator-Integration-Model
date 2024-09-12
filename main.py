@@ -73,7 +73,7 @@ class CustomLoss(nn.Module):
         total_loss = regularization_term * self.l1_coeff + mse_loss * 10
         return total_loss
 
-# 定义多层感知机模型
+# 定义多特征映射层
 class MFML(nn.Module):
     def __init__(self, input_size, hidden_size, output_size):
         super(MFML, self).__init__()
